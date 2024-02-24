@@ -68,3 +68,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Se você estiver com dúvidas sobre como adicionar ícones do Font Awesome  em seu projeto React, é simples! Basta seguir estes passos:
+
+Pt-BR - Instale as dependências necessárias usando os seguintes comandos:
+English - Install the required dependencies using the following commands:
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+
+Pt-BR - No componente onde deseja usar os ícones, faça os seguintes imports:
+English: In the component where you want to use the icons, make the following imports:
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faSearch, faGlobe } from '@fortawesome/free-solid-svg-icons';
+
+Pt-BR - Agora, dentro da tag <span>, você pode usar os ícones assim:
+English - Now, inside the <span> tag, you can use icons like this:
+<span><FontAwesomeIcon icon={faSearch} /></span>
+
+# spotify-imersao-alura
+
+start:
+
+npm start
+
+-------------------------
+
+# spotify-imersao-alura
+
+npm init -y
+
+npm install json-server@0.17.4
+
+npm run api
