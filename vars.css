@@ -1,0 +1,9 @@
+:root{
+    /* FONT é onde decidi colocar essa fonte para todo o conteudo, onde setei para o body adicionando no css*/
+    --font--dm-sans: "DM Sans ", sans-serif;
+
+
+/* COLORS */
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0,0,07);
+}

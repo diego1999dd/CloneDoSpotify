@@ -1,0 +1,293 @@
+.sidebar {
+    /*Como criei uma classe dentro da div para o logo, estou mexendo nele agora, no posicionamento*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebar__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    /* 16 seria a altura, direita 0, baixo 0, 16 para esquerda */
+    padding: 16px 0 0 16px;
+}
+
+/*Icones de inicio e buscar*/
+
+
+.logo{
+    background: #121212;
+    display:flex;
+    border-radius:8px ;
+    padding:16px 0 0 16px;
+}
+
+.sidebar__navigation .logo {
+    background: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px; 
+}
+
+.sidebar__navigation .logo img {
+    width: 80px;
+}
+
+.sidebar nav ul {
+    /*aqui desgrudou a lista do logo*/
+    margin-top: 5px;
+    /*aqui desgrudou da ponta esquerda e se alinhou com a logo*/
+    padding: 0 20px 10px 20px;
+}
+
+.sidebar ul li {
+    padding: 13px 0;
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.sidebar nav ul li .fa-home, .fa-search {
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ffffff;
+}
+
+/*parte da divisoria da biblioteca*/
+
+.library {
+    background-color: #121212;
+    /* arredondar as bordas*/
+    border-radius: 8px;
+    /*deixar flexivel um do lado do outro ou em baixo*/
+    display: flex;
+    /*é usada para alinhar os elementos ao longo do eixo principal*/
+    justify-content: space-between;
+    /*permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal*/
+    flex-direction: column;/*o column seria para deixar em coluna*/
+    /* 4 de altura e 8 de direita*/
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*aqui acessei a libray e depois o content*/
+.library .library__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__button{
+    display: flex;
+    margin-right: 3px;
+    color: #b3b3b3;
+    /*aqui mexi na cor para deixar transparent pq o proprio icone do botao veio com uma cor e como deixo transparente posso mudar depois*/
+    background-color: transparent;
+    /*aqui tirou a borda do botao 'sua biblioteca'*/
+    border: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;/*alinhar o texto*/
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+
+.library .library__button .fa-library{
+    /*aqui eu mexi no tamanho do icone do botao*/
+    font-size: 22px;
+    /*aqui separou um pouco o botao do nome sua biblioteca*/
+    font-weight: 700;
+    color: #b3b3b3;
+    margin-right: 4px;
+    padding-right: 8px;
+}
+
+.library .library__content .faPlus{
+    margin: 19px 10px;
+    font-size: 16px;
+}
+
+
+
+.library .library__button:hover, .library .library__content .faPlus:hover, .library .library__button .fa-library:hover{
+    color: #fff;
+}
+
+/*aqui mexi na seçao inteira*/
+.section-playlist{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 8px 0;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+/*aqui foi dentro da secao e o seu conteudo*/
+.section-playlist .section-playlist__content{
+    display: flex;
+    flex-direction: column;
+}
+
+/*aqui foi nos textos para dar uma separada e usar uma cor*/
+.section-playlist__content .text{
+    padding-bottom: 14px;
+    color: #fff;
+}
+
+/*tamanho da fonte do titulo*/
+.section-playlist__content .tittle{
+    font-weight: 700;
+}
+
+/*tamanho da fonte do sub-titulo*/
+.section-playlist__content .subtitle{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/*aqui  mexo no botao de criar playlist*/
+.section-playlist__content .section-playlist__button{
+    display: flex;
+    /*aqui alinhei o texto do botao no meio dele*/
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 8px;
+    margin-top: 12px;
+    border: 0;
+    width: 116px;
+}
+
+.section-playlist__content .section-playlist__button:hover{
+    transform: scale(1.04);
+}
+
+/*2 Parte da seção*/
+
+.section-playlist-2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 8px 0;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+/*aqui foi dentro da secao e o seu conteudo*/
+.section-playlist-2 .section-playlist-2__content{
+    display: flex;
+    flex-direction: column;
+}
+
+/*aqui foi nos textos para dar uma separada e usar uma cor*/
+.section-playlist-2__content .text-2{
+    padding-bottom: 14px;
+    color: #fff;
+}
+
+/*tamanho da fonte do titulo*/
+.section-playlist__content-2 .tittle-2{
+    font-weight: 700;
+}
+
+/*tamanho da fonte do sub-titulo*/
+.section-playlist-2__content .subtitle-2{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/*aqui  mexo no botao de criar playlist*/
+.section-playlist-2__content .section-playlist-2__button{
+    display: flex;
+    /*aqui alinhei o texto do botao no meio dele*/
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 8px;
+    margin-top: 12px;
+    border: 0;
+    width: 140px;
+}
+
+.section-playlist-2__content .section-playlist-2__button:hover{
+    transform: scale(1.04);
+}
+
+/*Já a sidebar ( <aside class="sidebar"> ) é um painel lateral que pode ser utilizado para exibir informações adicionais ou links secundários. O botão de menu ( <button class="menu-button"> ) é usado para abrir e fechar a barra lateral de navegação, tornando-a responsiva e adaptável a diferentes tamanhos de tela.*/
+.sidebar .cookies{
+    margin:60px 20px;
+}
+
+.sidebar .cookies a{
+    color:#b3b3b3;
+    font-weight: 500;
+    font-size:10px;
+    text-decoration: none;
+    padding-right: 18px;
+}
+
+/*O :hover é uma pseudo-classe CSS que ao ser utilizada ativa estilos em um elemento. O :hover possibilita um elemento ter o seu estilo alterado através da ação do usuário, quando o próprio passa o cursor do mouse sobre o elemento.*/
+/*.sidebar .cookies a:hover{
+    text-decoration: underline;
+}*/
+
+/* aqui estou mexendo no botao das linguagens*/
+.languages .languages__button{
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #878787;
+    color:#FFF;
+    /*o bold vale 700*/
+    font-weight: bold;
+    /* o cursor pointer serve para colocar uma maozinha em cima da onde o usuario vai clicar ou ver*/
+    cursor:pointer;
+    width: 170px;
+    margin:8px;
+    padding:8px;
+    border-radius:20px;
+}
+
+.languages .languages__button:hover{
+    transform: scale(1.04);
+    color: #fff;
+}
+
+
+.languages .languages__button span{
+    margin-right: 4px;
+}

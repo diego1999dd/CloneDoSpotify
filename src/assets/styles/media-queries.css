@@ -1,0 +1,5 @@
+@media screen and (max-width: 1015px) {
+   .offer__list-item {
+     grid-template-columns: 1fr 1fr; /*aqui onde coloco o espacamento dos grids, e posso inspencionar o elemento no google para ver em diferentes tamanhos qual seria o tamanho certo 1015 é o limite para dar 2fr*/
+   }
+ }

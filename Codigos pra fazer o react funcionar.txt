@@ -1,0 +1,7 @@
+npm start
+faz o react funcionar
+
+npm run api
+para a busca funcionar (fui em package.json e em scripts dei uma virgula e coloquei uma api que quando executar o comando do json server, é só colocar api run que roda)
+
+ctrl+c reseta o terminal
